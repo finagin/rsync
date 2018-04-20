@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+DIR="/tmp/realsync";
+
+printf "\e[92mWorking directory: \e[96m${PWD}\e[92m\n\n" \
+    && perl ${DIR}/realsync $PWD >&1 2>/dev/null \
+    || printf "Downloading RealSync..\n\n" \
+    && git clone git@github.com:DmitryKoterov/dklab_realsync.git ${DIR} >/dev/null 2>&1 \
+    && perl ${DIR}/realsync $PWD \
+    || rm -rf ${DIR} \
+    && printf "\n\nAll clear\n\e[96mGoodbye!!";
+
