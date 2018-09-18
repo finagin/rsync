@@ -1,0 +1,20 @@
+{
+  "name": "finagin/realsync",
+  "version": "0.1.0",
+  "homepage": "https://github.com/finagin/realsynk",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Igor Finagin",
+      "email": "Igor@Finag.in",
+      "homepage": "https://Finag.in",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/finagin/realsync/issues"
+  },
+  "bin": [
+    "realsync"
+  ]
+}
